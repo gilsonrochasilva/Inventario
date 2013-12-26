@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="br.com.inventario.gui.Main">
+  <grid id="cbd77" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="48" y="54" width="592" height="359"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <toolbar id="7438f">
+        <constraints border-constraint="North"/>
+        <properties>
+          <floatable value="false"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="134b1" class="javax.swing.JButton" binding="btRegistroInventario">
+            <constraints/>
+            <properties>
+              <text value="Registro de Inventário"/>
+            </properties>
+          </component>
+          <component id="d4b50" class="javax.swing.JButton" binding="btTodosMovimentos">
+            <constraints/>
+            <properties>
+              <text value="Todos os Movimentos"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <component id="b73fa" class="javax.swing.JDesktopPane">
+        <constraints border-constraint="Center"/>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>
