@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="br.com.inventario.gui.Main">
   <grid id="cbd77" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="48" y="54" width="592" height="359"/>
+      <xy x="48" y="54" width="690" height="359"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -26,9 +26,15 @@
               <text value="Todos os Movimentos"/>
             </properties>
           </component>
+          <component id="53b28" class="javax.swing.JButton" binding="btImportar">
+            <constraints/>
+            <properties>
+              <text value="Importar Produtos"/>
+            </properties>
+          </component>
         </children>
       </toolbar>
-      <component id="b73fa" class="javax.swing.JDesktopPane">
+      <component id="b73fa" class="javax.swing.JDesktopPane" binding="jDesktopPane">
         <constraints border-constraint="Center"/>
         <properties/>
       </component>

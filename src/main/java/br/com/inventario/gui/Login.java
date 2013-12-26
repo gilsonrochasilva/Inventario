@@ -13,6 +13,7 @@ public class Login extends JFrame {
 
     public Login() {
         setContentPane(contentPane);
+        setTitle("Ypsilon Consulting - Sistema de Inventário");
         getRootPane().setDefaultButton(btLogin);
         btSair.addActionListener(new SairActionListener());
 

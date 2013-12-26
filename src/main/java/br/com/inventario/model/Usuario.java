@@ -1,5 +1,7 @@
 package br.com.inventario.model;
 
+import br.com.inventario.model.emuns.Perfil;
+
 import javax.persistence.*;
 
 /**
@@ -21,6 +23,10 @@ public class Usuario {
 
     @Column(length = 50, nullable = false)
     private String senha;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "perfil", nullable = false)
+    private Perfil perfil;
 
     public Integer getId() {
         return id;
