@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1ba600d-8b91-41f7-8fb5-ef1cd24a8497" name="Default" comment="Initial Commit&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java" />
+    <list default="true" id="d1ba600d-8b91-41f7-8fb5-ef1cd24a8497" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Inventario.iws" />
@@ -72,87 +74,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Produto.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/Produto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="7" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="2295">
-              <folding>
-                <element signature="method#equals#0;class#Produto#0" expanded="false" />
-                <element signature="method#hashCode#0;class#Produto#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProdutoDAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
+            <state line="9" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenericDAO.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java">
+      <file leaf-file-name="UsuarioDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="8" selection-start="708" selection-end="708" vertical-scroll-proportion="0.6502732" vertical-offset="0" max-vertical-offset="1513">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistroInventario.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="20" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1139">
+            <state line="8" column="50" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding>
-                <element signature="method#equals#0;class#RegistroInventario#0" expanded="false" />
-                <element signature="method#hashCode#0;class#RegistroInventario#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <file leaf-file-name="RegistroInventarioDAO.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="40" selection-start="333" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="48" selection-start="334" selection-end="334" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Usuario.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="25" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="61" max-vertical-offset="867">
+            <state line="10" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="570">
               <folding>
-                <element signature="method#equals#0;class#Usuario#0" expanded="false" />
-                <element signature="method#hashCode#0;class#Usuario#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,7 +122,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/enums/TipoMovimento.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.form" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" />
@@ -183,6 +129,9 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Produto.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java" />
       </list>
     </option>
   </component>
@@ -301,6 +250,10 @@
               <option name="myItemId" value="inventario" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -359,40 +312,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Inventario" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="inventario" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -737,17 +656,21 @@
       <updated>1387664586404</updated>
       <workItem from="1387664592701" duration="3343000" />
       <workItem from="1388013571067" duration="5676000" />
-      <workItem from="1388064167119" duration="8515000" />
+      <workItem from="1388064167119" duration="9682000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1388077054581</created>
       <updated>1388077054581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="DAO Genérico">
+      <created>1388079256704</created>
+      <updated>1388079256704</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17534000" />
+    <option name="totallyTimeSpent" value="18701000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -817,7 +740,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Initial Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+    <MESSAGE value="DAO Genérico" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAO Genérico" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -989,13 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="40" selection-start="333" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
@@ -1005,8 +922,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="8" selection-start="708" selection-end="708" vertical-scroll-proportion="0.6502732" vertical-offset="0" max-vertical-offset="1513">
+        <state line="29" column="8" selection-start="708" selection-end="708" vertical-scroll-proportion="0.55373406" vertical-offset="53" max-vertical-offset="1513">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="50" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="570">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
