@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1ba600d-8b91-41f7-8fb5-ef1cd24a8497" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/model/emuns/Perfil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.form" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Inventario.iml" afterPath="$PROJECT_DIR$/Inventario.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Inventario.iws" />
@@ -125,19 +114,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenericDAO.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GenericDAO.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="70" selection-start="674" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+            <state line="27" column="73" selection-start="689" selection-end="689" vertical-scroll-proportion="0.20877193" vertical-offset="204" max-vertical-offset="1513">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="persistence.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="14" selection-start="899" selection-end="899" vertical-scroll-proportion="0.48833033" vertical-offset="0" max-vertical-offset="557">
+            <state line="16" column="14" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
@@ -728,7 +717,7 @@
       <updated>1387664586404</updated>
       <workItem from="1387664592701" duration="3343000" />
       <workItem from="1388013571067" duration="5676000" />
-      <workItem from="1388064167119" duration="18005000" />
+      <workItem from="1388064167119" duration="18395000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1388077054581</created>
@@ -742,11 +731,15 @@
       <created>1388082879701</created>
       <updated>1388082879701</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tela de Registro de Inventário">
+      <created>1388099331826</created>
+      <updated>1388099331826</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27024000" />
+    <option name="totallyTimeSpent" value="27414000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -818,7 +811,9 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="DAO Genérico" />
     <MESSAGE value="DAO's" />
-    <option name="LAST_COMMIT_MESSAGE" value="DAO's" />
+    <MESSAGE value="DAO's&#10;" />
+    <MESSAGE value="Tela de Registro de Inventário" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tela de Registro de Inventário" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1062,16 +1057,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="70" selection-start="674" selection-end="686" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
+        <state line="16" column="14" selection-start="899" selection-end="899" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="899" selection-end="899" vertical-scroll-proportion="0.48833033" vertical-offset="0" max-vertical-offset="557">
+        <state line="27" column="73" selection-start="689" selection-end="689" vertical-scroll-proportion="0.20877193" vertical-offset="204" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
