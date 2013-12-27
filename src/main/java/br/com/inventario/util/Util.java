@@ -1,4 +1,4 @@
-package br.com.inventario;
+package br.com.inventario.util;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

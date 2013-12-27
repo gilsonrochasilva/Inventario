@@ -1,27 +1,24 @@
 package br.com.inventario.gui;
 
-import br.com.inventario.Util;
-import br.com.inventario.dao.UsuarioDAO;
-import br.com.inventario.model.Usuario;
-import br.com.inventario.model.emuns.Perfil;
-
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.*;
-import java.io.UnsupportedEncodingException;
-import java.security.NoSuchAlgorithmException;
+import java.io.IOException;
 
 public class Main extends JFrame {
     private JPanel contentPane;
     private JButton btRegistroInventario;
     private JButton btTodosMovimentos;
     private JDesktopPane jDesktopPane;
-    private JButton btImportar;
+    private JButton btImportarProdutos;
+    private JButton btImportarInventario;
 
     public Main() {
-        setContentPane(contentPane);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setExtendedState(MAXIMIZED_BOTH);
         setTitle("Ypsilon Consulting - Sistema de Inventário");
+        setContentPane(contentPane);
 
         btRegistroInventario.addActionListener(new ActionListener() {
             @Override
@@ -30,5 +27,25 @@ public class Main extends JFrame {
                 jDesktopPane.add("RegistroDeInventario", registroDeInventario);
             }
         });
+    }
+
+    private void createUIComponents() throws IOException {
+        Image img = ImageIO.read(this.getClass().getResource("/br/com/inventario/gui/img/search-add.png"));
+
+        btRegistroInventario = new JButton();
+        btRegistroInventario.setToolTipText("Registro de Inventário");
+        btRegistroInventario.setIcon(new ImageIcon(img));
+
+        btTodosMovimentos = new JButton();
+        btTodosMovimentos.setToolTipText("Registro de Inventário");
+        //btTodosMovimentos.setIcon(new ImageIcon((getClass().getResource("/br/com/inventario/gui/img/search-add.png"))));
+
+        btImportarProdutos = new JButton();
+        btImportarProdutos.setToolTipText("Registro de Inventário");
+        //btImportarProdutos.setIcon(new ImageIcon((getClass().getResource("/br/com/inventario/gui/img/search-add.png"))));
+
+        btImportarInventario = new JButton();
+        btImportarInventario.setToolTipText("Registro de Inventário");
+        //btImportarInventario.setIcon(new ImageIcon((getClass().getResource("/br/com/inventario/gui/img/search-add.png"))));
     }
 }

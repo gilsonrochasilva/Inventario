@@ -14,22 +14,33 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="134b1" class="javax.swing.JButton" binding="btRegistroInventario">
+          <component id="134b1" class="javax.swing.JButton" binding="btRegistroInventario" custom-create="true">
             <constraints/>
             <properties>
-              <text value="Registro de Inventário"/>
+              <text value=""/>
+              <toolTipText value="Registro de Inventário"/>
             </properties>
           </component>
-          <component id="d4b50" class="javax.swing.JButton" binding="btTodosMovimentos">
+          <component id="d4b50" class="javax.swing.JButton" binding="btTodosMovimentos" custom-create="true">
             <constraints/>
             <properties>
-              <text value="Todos os Movimentos"/>
+              <text value=""/>
+              <toolTipText value="Todos os Movimentos"/>
             </properties>
           </component>
-          <component id="53b28" class="javax.swing.JButton" binding="btImportar">
+          <component id="53b28" class="javax.swing.JButton" binding="btImportarProdutos" custom-create="true">
             <constraints/>
             <properties>
-              <text value="Importar Produtos"/>
+              <enabled value="true"/>
+              <text value=""/>
+              <toolTipText value="Importar Produtos"/>
+            </properties>
+          </component>
+          <component id="8d565" class="javax.swing.JButton" binding="btImportarInventario" custom-create="true">
+            <constraints/>
+            <properties>
+              <text value=""/>
+              <toolTipText value="Importar Inventário"/>
             </properties>
           </component>
         </children>

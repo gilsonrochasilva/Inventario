@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1ba600d-8b91-41f7-8fb5-ef1cd24a8497" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_annotations_3_5_6_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_commons_annotations_3_2_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_2_8_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_5_8.xml" />
-      <change type="DELETED" beforePath="E:\Sistemas\inventario\workspace\.idea\libraries\Maven__org_jboss_jandex_1_1_0_Final.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Sistemas\inventario\workspace\.idea\libraries\Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\Sistemas\inventario\workspace\.idea\libraries\Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Inventario.iml" afterPath="$PROJECT_DIR$/Inventario.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/img/box-add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/img/database-add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/img/document-checklist.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/img/search-add.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/GilsonRocha.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/util/Session.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\.idea\libraries\Maven__org_hibernate_common_hibernate_commons_annotations_4_0_4_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_2_Final.xml" />
-      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\.idea\libraries\Maven__org_hibernate_hibernate_core_4_3_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_4_2_8_Final.xml" />
-      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\.idea\libraries\Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" />
-      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\.idea\libraries\Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_0_GA.xml" />
-      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\.idea\libraries\Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_1_spec_1_0_1_Final.xml" />
+      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\src\main\java\br\com\inventario\Util.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/util/Util.java" />
     </list>
     <ignored path="Inventario.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,32 +83,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Login.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="50" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+            <state line="110" column="0" selection-start="3004" selection-end="3004" vertical-scroll-proportion="0.0" vertical-offset="1623" max-vertical-offset="2193">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
+                <element signature="e#1055#1056#0" expanded="true" />
+                <element signature="e#1102#1103#0" expanded="true" />
+                <element signature="e#1140#1141#0" expanded="true" />
+                <element signature="e#1174#1175#0" expanded="true" />
+                <element signature="e#1203#1204#0" expanded="true" />
+                <element signature="e#1248#1249#0" expanded="true" />
+                <element signature="e#1284#1285#0" expanded="true" />
+                <element signature="e#1322#1323#0" expanded="true" />
+                <element signature="e#1352#1353#0" expanded="true" />
+                <element signature="e#1402#1403#0" expanded="true" />
+                <element signature="e#1440#1441#0" expanded="true" />
+                <element signature="e#1482#1483#0" expanded="true" />
+                <element signature="e#1512#1513#0" expanded="true" />
+                <element signature="e#1566#1567#0" expanded="true" />
+                <element signature="e#1604#1605#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsuarioDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="38" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Usuario.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="1037">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#equals#0;class#Usuario#0" expanded="false" />
-                <element signature="method#hashCode#0;class#Usuario#0" expanded="false" />
-              </folding>
-            </state>
+      <file leaf-file-name="Main.form" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="74" selection-start="986" selection-end="986" vertical-scroll-proportion="0.5368421" vertical-offset="0" max-vertical-offset="570">
+            <state line="32" column="63" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.65709156" vertical-offset="59" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
@@ -138,19 +152,20 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.form" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Produto.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.form" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/emuns/Perfil.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/util/Session.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" />
       </list>
     </option>
@@ -313,6 +328,10 @@
               <option name="myItemId" value="inventario" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -337,10 +356,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="inventario" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,6 +423,40 @@
               <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Inventario" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventario" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -423,7 +472,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/br/com/inventario" />
     <property name="SearchEverywhereHistory" value="" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -444,8 +493,12 @@
       <recent name="br.com.inventario.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Sistemas\inventario\workspace\src\main\java\br\com\inventario\gui\img" />
       <recent name="E:\Sistemas\inventario\workspace\src\main\java\br\com\inventario\dao\common" />
       <recent name="E:\Sistemas\inventario\workspace\src\main\resources\META-INF" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.inventario.util" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Login">
@@ -489,7 +542,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="Inventario" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -756,7 +815,7 @@
       <workItem from="1387664592701" duration="3343000" />
       <workItem from="1388013571067" duration="5676000" />
       <workItem from="1388064167119" duration="18654000" />
-      <workItem from="1388101806513" duration="7039000" />
+      <workItem from="1388101806513" duration="14609000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1388077054581</created>
@@ -778,11 +837,15 @@
       <created>1388099702420</created>
       <updated>1388099702420</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Correção dependências maven para hibernate;">
+      <created>1388162419579</created>
+      <updated>1388162419579</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34712000" />
+    <option name="totallyTimeSpent" value="42282000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -806,11 +869,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24697885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27643505" sideWeight="0.5201342" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24697885" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="21" y="271" width="1324" height="196" />
@@ -820,21 +884,20 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27643505" sideWeight="0.47986576" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27643505" sideWeight="0.47986576" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6828859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JPA Console" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.74161077" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718122" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14803626" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932886" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27643505" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24697885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="JPA Console" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.74161077" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -858,7 +921,8 @@
     <MESSAGE value="DAO's&#10;" />
     <MESSAGE value="Tela de Registro de Inventário" />
     <MESSAGE value="Tela de Registro de Inventário&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tela de Registro de Inventário&#10;" />
+    <MESSAGE value="Correção dependências maven para hibernate;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção dependências maven para hibernate;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -871,7 +935,25 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="30" selection-start="183" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1003">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
+            <element signature="e#1482#1483#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -902,9 +984,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="73" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1649">
-          <folding>
-            <element signature="e#0#2718#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -988,7 +1068,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Inventario.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java">
@@ -1019,7 +1101,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/Util.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="17" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <folding>
@@ -1073,37 +1155,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="183" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="24" selection-start="733" selection-end="733" vertical-scroll-proportion="0.622807" vertical-offset="104" max-vertical-offset="1598">
-          <folding>
-            <element signature="e#0#2718#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="203" selection-end="203" vertical-scroll-proportion="0.21675774" vertical-offset="0" max-vertical-offset="549">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="uml://Persistence/JavaeeElement:/f7ba552e/InventarioPU/Inventario/jpa/JPA/PersistenceModel">
@@ -1149,16 +1203,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="12" selection-start="1008" selection-end="1079" vertical-scroll-proportion="0.5798923" vertical-offset="0" max-vertical-offset="557">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="50" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+        <state line="1" column="50" selection-start="89" selection-end="89" vertical-scroll-proportion="0.02982456" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="1037">
+        <state line="20" column="56" selection-start="409" selection-end="409" vertical-scroll-proportion="0.2631579" vertical-offset="190" max-vertical-offset="1037">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#equals#0;class#Usuario#0" expanded="false" />
@@ -1167,16 +1228,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="12" selection-start="1008" selection-end="1079" vertical-scroll-proportion="0.5798923" vertical-offset="0" max-vertical-offset="557">
+        <state line="21" column="4" selection-start="480" selection-end="589" vertical-scroll-proportion="0.16491228" vertical-offset="127" max-vertical-offset="1513">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/util/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="50" selection-start="181" selection-end="181" vertical-scroll-proportion="0.26842105" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="38" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="3004" selection-end="3004" vertical-scroll-proportion="0.0" vertical-offset="1623" max-vertical-offset="2193">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1102#1103#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+            <element signature="e#1203#1204#0" expanded="true" />
+            <element signature="e#1248#1249#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+            <element signature="e#1402#1403#0" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
+            <element signature="e#1482#1483#0" expanded="true" />
+            <element signature="e#1512#1513#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="74" selection-start="986" selection-end="986" vertical-scroll-proportion="0.5368421" vertical-offset="0" max-vertical-offset="570">
+        <state line="32" column="63" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.65709156" vertical-offset="59" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
