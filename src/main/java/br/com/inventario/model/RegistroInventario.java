@@ -7,6 +7,7 @@ import java.util.Date;
 /**
  * Created by GilsonRocha on 21/12/13.
  */
+@Table
 @Entity
 public class RegistroInventario {
 
@@ -14,12 +15,12 @@ public class RegistroInventario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "usuario_id", nullable = false)
     @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="usuario_id")
     private Usuario usuario;
 
-    @Column(name = "produto_id", nullable = false)
     @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="produto_id")
     private Produto produto;
 
     @Temporal(TemporalType.TIMESTAMP)

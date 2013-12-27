@@ -3,6 +3,7 @@ package br.com.inventario.gui;
 import br.com.inventario.Util;
 import br.com.inventario.dao.UsuarioDAO;
 import br.com.inventario.model.Usuario;
+import br.com.inventario.model.emuns.Perfil;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -29,19 +30,5 @@ public class Main extends JFrame {
                 jDesktopPane.add("RegistroDeInventario", registroDeInventario);
             }
         });
-
-        Usuario usuario = new Usuario();
-        usuario.setLogin("inventario");
-        usuario.setNome("Inventário");
-        try {
-            usuario.setSenha(Util.toMD5("123"));
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-
-        UsuarioDAO usuarioDAO = new UsuarioDAO();
-        usuarioDAO.salvar(usuario);
     }
 }
