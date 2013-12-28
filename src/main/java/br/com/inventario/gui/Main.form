@@ -27,7 +27,7 @@
             <properties>
               <icon value="img/document-checklist.png"/>
               <text value=""/>
-              <toolTipText value="Todos os Movimentos"/>
+              <toolTipText value="Últimos Movimentos"/>
             </properties>
           </component>
           <component id="53b28" class="javax.swing.JButton" binding="btImportarProdutos">

@@ -42,11 +42,18 @@ public class Main extends JFrame {
         btImportarProdutos.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                try {
-                    onImportarProdutos(e);
-                } catch (JAXBException e1) {
-                    e1.printStackTrace();
-                }
+            try {
+                onImportarProdutos(e);
+            } catch (JAXBException e1) {
+                e1.printStackTrace();
+                JOptionPane.showMessageDialog(null, e1.getMessage());
+            }
+            }
+        });
+        btTodosMovimentos.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                onMovimentos(e);
             }
         });
     }
@@ -90,5 +97,11 @@ public class Main extends JFrame {
         } else {
             chooser.setVisible(false);
         }
+    }
+
+    private void onMovimentos(ActionEvent e) {
+        TodosMovimentos todosMovimentos = new TodosMovimentos(jDesktopPane);
+        jDesktopPane.add("TodosMovimentos", todosMovimentos);
+        jDesktopPane.setSelectedFrame(todosMovimentos);
     }
 }

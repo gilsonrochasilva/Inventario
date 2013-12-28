@@ -2,23 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1ba600d-8b91-41f7-8fb5-ef1cd24a8497" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jgoodies_forms_1_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Inventario.iml" afterPath="$PROJECT_DIR$/Inventario.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/TodosMovimentos.form" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/TodosMovimentos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.form" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\src\main\java\br\com\inventario\gui\img\box-add.png" afterPath="$PROJECT_DIR$/src/main/resources/img/box-add.png" />
-      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\src\main\java\br\com\inventario\gui\img\database-add.png" afterPath="$PROJECT_DIR$/src/main/resources/img/database-add.png" />
-      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\src\main\java\br\com\inventario\gui\img\document-checklist.png" afterPath="$PROJECT_DIR$/src/main/resources/img/document-checklist.png" />
-      <change type="MOVED" beforePath="E:\Sistemas\inventario\workspace\src\main\java\br\com\inventario\gui\img\search-add.png" afterPath="$PROJECT_DIR$/src/main/resources/img/search-add.png" />
     </list>
     <ignored path="Inventario.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,15 +77,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UsuarioDAO.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="59" selection-start="533" selection-end="856" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.form" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form">
           <provider selected="true" editor-type-id="ui-designer">
@@ -106,31 +87,62 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="5" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0" vertical-offset="263" max-vertical-offset="1343">
+            <state line="103" column="20" selection-start="3923" selection-end="3923" vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="799">
               <folding>
-                <element signature="e#1350#1645#0" expanded="true" />
-                <element signature="e#1634#1635#0" expanded="true" />
+                <element signature="method#onRegistroInventario#0;class#Main#0" expanded="false" />
+                <element signature="method#onImportarProdutos#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistroDeInventario.form" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistroDeInventario.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RegistroDeInventario.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="58" selection-start="567" selection-end="567" vertical-scroll-proportion="-1.6543859" vertical-offset="1062" max-vertical-offset="1632">
+            <state line="45" column="51" selection-start="1162" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1547">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TodosMovimentos.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/TodosMovimentos.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="37" selection-start="1553" selection-end="1553" vertical-scroll-proportion="0.40350878" vertical-offset="586" max-vertical-offset="1156">
               <folding>
-                <element signature="e#1859#2016#0" expanded="true" />
-                <element signature="e#2005#2006#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#995#1003#0" expanded="true" />
+                <element signature="e#1052#1062#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Produto.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/Produto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="186" column="5" selection-start="3671" selection-end="3671" vertical-scroll-proportion="0.0" vertical-offset="1725" max-vertical-offset="2295">
+              <folding>
+                <element signature="method#equals#0;class#Produto#0" expanded="false" />
+                <element signature="method#hashCode#0;class#Produto#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistroInventarioDAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TodosMovimentos.form" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/TodosMovimentos.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
           </provider>
         </entry>
       </file>
@@ -149,12 +161,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/enums/TipoMovimento.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.form" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Produto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/emuns/Perfil.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/common/GenericDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Usuario.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/util/Session.java" />
@@ -162,16 +171,21 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/xml/xml/Produtos.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/xml/xml/ObjectFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/xml/ObjectFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/xml/Produtos.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/xml/produtos.xsd" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/ProdutoDAO.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.form" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.java" />
         <option value="db-console:/f7ba552e/090afc40-4842-439a-a04a-6e249c45fdf9/" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/TodosMovimentos.form" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/model/Produto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/inventario/gui/TodosMovimentos.java" />
       </list>
     </option>
   </component>
@@ -357,6 +371,40 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="inventario" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Inventario" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="workspace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventario" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TodosMovimentos" />
+              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -821,7 +869,7 @@
       <workItem from="1388064167119" duration="18654000" />
       <workItem from="1388101806513" duration="15065000" />
       <workItem from="1388170947198" duration="1369000" />
-      <workItem from="1388231467926" duration="9652000" />
+      <workItem from="1388231467926" duration="12335000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1388077054581</created>
@@ -851,11 +899,15 @@
       <created>1388170552802</created>
       <updated>1388170552802</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Importação de Produtos;&#10;Registro de Inventário;">
+      <created>1388245164242</created>
+      <updated>1388245164242</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53759000" />
+    <option name="totallyTimeSpent" value="56442000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -894,7 +946,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27643505" sideWeight="0.47986576" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27643505" sideWeight="0.47986576" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6828859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -935,7 +987,8 @@
     <MESSAGE value="Tela de Registro de Inventário&#10;" />
     <MESSAGE value="Correção dependências maven para hibernate;" />
     <MESSAGE value="Login;&#10;Teste de imagens do menu." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login;&#10;Teste de imagens do menu." />
+    <MESSAGE value="Importação de Produtos;&#10;Registro de Inventário;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Importação de Produtos;&#10;Registro de Inventário;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -945,20 +998,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="31" selection-start="1968" selection-end="1968" vertical-scroll-proportion="0.0" vertical-offset="1275" max-vertical-offset="2363">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/UsuarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="38" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -972,10 +1011,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="26" selection-start="859" selection-end="859" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="714">
-          <folding>
-            <element signature="e#1859#2016#0" expanded="true" />
-            <element signature="e#2005#2006#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -983,8 +1019,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="5" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="612">
           <folding>
-            <element signature="e#1350#1645#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="method#onRegistroInventario#0;class#Main#0" expanded="false" />
+            <element signature="method#onImportarProdutos#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1012,8 +1048,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="5" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="612">
           <folding>
-            <element signature="e#1350#1645#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="method#onRegistroInventario#0;class#Main#0" expanded="false" />
+            <element signature="method#onImportarProdutos#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1039,8 +1075,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="8" selection-start="1490" selection-end="1490" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="901">
           <folding>
-            <element signature="e#1350#1645#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="method#onRegistroInventario#0;class#Main#0" expanded="false" />
+            <element signature="method#onImportarProdutos#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1097,8 +1133,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="5" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1122">
           <folding>
-            <element signature="e#1350#1645#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="method#onRegistroInventario#0;class#Main#0" expanded="false" />
+            <element signature="method#onImportarProdutos#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1108,8 +1144,6 @@
         <state line="11" column="4" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="1377">
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="method#equals#0;class#RegistroInventario#0" expanded="false" />
-            <element signature="method#hashCode#0;class#RegistroInventario#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1141,11 +1175,6 @@
     <entry file="file://$PROJECT_DIR$/Inventario.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="0.2982456" vertical-offset="0" max-vertical-offset="570" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/emuns/Perfil.java">
@@ -1269,21 +1298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/Produto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="138" selection-end="138" vertical-scroll-proportion="0.26842105" vertical-offset="0" max-vertical-offset="2295">
-          <folding>
-            <element signature="method#equals#0;class#Produto#0" expanded="false" />
-            <element signature="method#hashCode#0;class#Produto#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/xml/produtos.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="59" selection-start="503" selection-end="503" vertical-scroll-proportion="0.26842105" vertical-offset="0" max-vertical-offset="570">
@@ -1333,26 +1347,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="5" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1343">
-          <folding>
-            <element signature="e#1350#1645#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="34" selection-start="543" selection-end="792" vertical-scroll-proportion="0.41754386" vertical-offset="153" max-vertical-offset="1156">
-          <folding>
-            <element signature="method#equals#0;class#RegistroInventario#0" expanded="false" />
-            <element signature="method#hashCode#0;class#RegistroInventario#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://db-console:/f7ba552e/090afc40-4842-439a-a04a-6e249c45fdf9/">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="32" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -1362,10 +1356,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/RegistroDeInventario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="58" selection-start="567" selection-end="567" vertical-scroll-proportion="-1.6543859" vertical-offset="1062" max-vertical-offset="1632">
+        <state line="45" column="51" selection-start="1162" selection-end="1385" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="20" selection-start="3923" selection-end="3923" vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="799">
           <folding>
-            <element signature="e#1859#2016#0" expanded="true" />
-            <element signature="e#2005#2006#0" expanded="true" />
+            <element signature="method#onRegistroInventario#0;class#Main#0" expanded="false" />
+            <element signature="method#onImportarProdutos#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/TodosMovimentos.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/RegistroInventario.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="22" selection-start="2015" selection-end="2015" vertical-scroll-proportion="1.8491228" vertical-offset="0" max-vertical-offset="1496">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/model/Produto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="5" selection-start="3671" selection-end="3671" vertical-scroll-proportion="0.0" vertical-offset="1725" max-vertical-offset="2295">
+          <folding>
+            <element signature="method#equals#0;class#Produto#0" expanded="false" />
+            <element signature="method#hashCode#0;class#Produto#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/dao/RegistroInventarioDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/inventario/gui/TodosMovimentos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="37" selection-start="1553" selection-end="1553" vertical-scroll-proportion="0.40350878" vertical-offset="586" max-vertical-offset="1156">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#995#1003#0" expanded="true" />
+            <element signature="e#1052#1062#0" expanded="true" />
           </folding>
         </state>
       </provider>

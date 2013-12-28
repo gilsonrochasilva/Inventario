@@ -1,6 +1,7 @@
 package br.com.inventario.model;
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -79,6 +80,15 @@ public class RegistroInventario {
 
     public void setAtivo(Boolean ativo) {
         this.ativo = ativo;
+    }
+
+    public String getDataFormatada() {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        if(dataHoraRegistro != null) {
+            return simpleDateFormat.format(dataHoraRegistro);
+        } else {
+            return "";
+        }
     }
 
     @Override
