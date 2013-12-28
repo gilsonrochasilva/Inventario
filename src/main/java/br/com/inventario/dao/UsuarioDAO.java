@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class UsuarioDAO extends GenericDAO<Usuario> {
 
-    public Usuario getBy(String login, String senha) throws UnsupportedEncodingException, NoSuchAlgorithmException {
+    public Usuario getPor(String login, String senha) throws UnsupportedEncodingException, NoSuchAlgorithmException {
         Query query = getEM().createQuery("select u from Usuario u where u.login = :login and u.senha = :senha");
         query.setParameter("login", login);
         query.setParameter("senha", Util.toMD5(senha));

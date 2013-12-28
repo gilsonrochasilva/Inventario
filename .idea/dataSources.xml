@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3236684714">
+    <data-source source="LOCAL" name="H2 - inventario" uuid="090afc40-4842-439a-a04a-6e249c45fdf9">
+      <driver-ref>h2.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:~/h2database/inventario</jdbc-url>
+      <user-name>inventario</user-name>
+      <user-password>dfc3dfc4dfdcdfcfdfc4dfdedfcbdfd8dfc3dfc5</user-password>
+      <schema-pattern>*</schema-pattern>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

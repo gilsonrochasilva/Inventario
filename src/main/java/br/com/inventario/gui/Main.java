@@ -1,9 +1,20 @@
 package br.com.inventario.gui;
 
+import br.com.inventario.dao.ProdutoDAO;
+import br.com.inventario.model.Produto;
+import br.com.inventario.xml.Produtos;
+import javafx.stage.FileChooser;
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.transform.stream.StreamSource;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
 import java.io.IOException;
 
 public class Main extends JFrame {
@@ -13,6 +24,8 @@ public class Main extends JFrame {
     private JDesktopPane jDesktopPane;
     private JButton btImportarProdutos;
     private JButton btImportarInventario;
+    private JPanel statusBar;
+    private JLabel statusLabel;
 
     public Main() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -23,29 +36,59 @@ public class Main extends JFrame {
         btRegistroInventario.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                RegistroDeInventario registroDeInventario = new RegistroDeInventario(jDesktopPane);
-                jDesktopPane.add("RegistroDeInventario", registroDeInventario);
+                onRegistroInventario(e);
+            }
+        });
+        btImportarProdutos.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    onImportarProdutos(e);
+                } catch (JAXBException e1) {
+                    e1.printStackTrace();
+                }
             }
         });
     }
 
-    private void createUIComponents() throws IOException {
-        Image img = ImageIO.read(this.getClass().getResource("/br/com/inventario/gui/img/search-add.png"));
+    private void onRegistroInventario(ActionEvent e) {
+        RegistroDeInventario registroDeInventario = new RegistroDeInventario(jDesktopPane);
+        jDesktopPane.add("RegistroDeInventario", registroDeInventario);
+        jDesktopPane.setSelectedFrame(registroDeInventario);
+    }
 
-        btRegistroInventario = new JButton();
-        btRegistroInventario.setToolTipText("Registro de Inventário");
-        btRegistroInventario.setIcon(new ImageIcon(img));
+    private void onImportarProdutos(ActionEvent e) throws JAXBException {
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("Arquivos XML", "xml");
 
-        btTodosMovimentos = new JButton();
-        btTodosMovimentos.setToolTipText("Registro de Inventário");
-        //btTodosMovimentos.setIcon(new ImageIcon((getClass().getResource("/br/com/inventario/gui/img/search-add.png"))));
+        JFileChooser chooser = new JFileChooser();
+        chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+        chooser.addChoosableFileFilter(filter);
+        chooser.setAcceptAllFileFilterUsed(false);
 
-        btImportarProdutos = new JButton();
-        btImportarProdutos.setToolTipText("Registro de Inventário");
-        //btImportarProdutos.setIcon(new ImageIcon((getClass().getResource("/br/com/inventario/gui/img/search-add.png"))));
+        int returnVal = chooser.showOpenDialog(this);
+        if(returnVal == JFileChooser.APPROVE_OPTION) {
+            File fileArquivoXML = chooser.getSelectedFile();
+            if(!fileArquivoXML.exists()) {
+                System.err.println(String.format("Arquivo %s não encontrado", fileArquivoXML.getPath()));
+            }
 
-        btImportarInventario = new JButton();
-        btImportarInventario.setToolTipText("Registro de Inventário");
-        //btImportarInventario.setIcon(new ImageIcon((getClass().getResource("/br/com/inventario/gui/img/search-add.png"))));
+            JAXBContext jaxbContext = JAXBContext.newInstance(Produtos.class);
+
+            StreamSource streamSource = new StreamSource(fileArquivoXML);
+            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
+            Produtos produtos = (Produtos) unmarshaller.unmarshal(streamSource, Produtos.class).getValue();
+
+            ProdutoDAO produtoDAO = new ProdutoDAO();
+
+            int contador = 0;
+            for(Produtos.Produto produto : produtos.getProduto()) {
+                statusLabel.setText(String.format("Importando %d de %d.", ++contador, produtos.getProduto().size()));
+                produtoDAO.importarProduto(produto);
+            }
+
+            statusLabel.setText(String.format("Finalizado com sucesso.", ++contador, produtos.getProduto().size()));
+        } else {
+            chooser.setVisible(false);
+        }
     }
 }

@@ -14,31 +14,35 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="134b1" class="javax.swing.JButton" binding="btRegistroInventario" custom-create="true">
+          <component id="134b1" class="javax.swing.JButton" binding="btRegistroInventario">
             <constraints/>
             <properties>
+              <icon value="img/search-add.png"/>
               <text value=""/>
               <toolTipText value="Registro de Inventário"/>
             </properties>
           </component>
-          <component id="d4b50" class="javax.swing.JButton" binding="btTodosMovimentos" custom-create="true">
+          <component id="d4b50" class="javax.swing.JButton" binding="btTodosMovimentos">
             <constraints/>
             <properties>
+              <icon value="img/document-checklist.png"/>
               <text value=""/>
               <toolTipText value="Todos os Movimentos"/>
             </properties>
           </component>
-          <component id="53b28" class="javax.swing.JButton" binding="btImportarProdutos" custom-create="true">
+          <component id="53b28" class="javax.swing.JButton" binding="btImportarProdutos">
             <constraints/>
             <properties>
               <enabled value="true"/>
+              <icon value="img/box-add.png"/>
               <text value=""/>
               <toolTipText value="Importar Produtos"/>
             </properties>
           </component>
-          <component id="8d565" class="javax.swing.JButton" binding="btImportarInventario" custom-create="true">
+          <component id="8d565" class="javax.swing.JButton" binding="btImportarInventario">
             <constraints/>
             <properties>
+              <icon value="img/database-add.png"/>
               <text value=""/>
               <toolTipText value="Importar Inventário"/>
             </properties>
@@ -49,6 +53,21 @@
         <constraints border-constraint="Center"/>
         <properties/>
       </component>
+      <grid id="1d276" binding="statusBar" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="bevel-lowered"/>
+        <children>
+          <component id="89568" class="javax.swing.JLabel" binding="statusLabel">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="2"/>
+              <text value="Seja bem vindo."/>
+            </properties>
+          </component>
+        </children>
+      </grid>
     </children>
   </grid>
 </form>

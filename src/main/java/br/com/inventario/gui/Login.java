@@ -5,7 +5,6 @@ import br.com.inventario.model.Usuario;
 import br.com.inventario.util.Session;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.UnsupportedEncodingException;
@@ -66,6 +65,16 @@ public class Login extends JFrame {
     }
 
     public static void main(String[] args) {
+        try {
+            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (Exception e) {
+        }
+
         Login dialog = new Login();
         dialog.pack();
         dialog.setVisible(true);
@@ -101,7 +110,7 @@ public class Login extends JFrame {
 
             UsuarioDAO usuarioDAO = new UsuarioDAO();
             try {
-                Usuario usuario = usuarioDAO.getBy(_login, _senha);
+                Usuario usuario = usuarioDAO.getPor(_login, _senha);
                 //202CB962AC59075B964B07152D234B70
                 if(usuario == null) {
                     JOptionPane.showMessageDialog(login, "Login ou senha inválidos.");
