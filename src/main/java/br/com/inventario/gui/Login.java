@@ -2,7 +2,9 @@ package br.com.inventario.gui;
 
 import br.com.inventario.dao.UsuarioDAO;
 import br.com.inventario.model.Usuario;
+import br.com.inventario.model.emuns.Perfil;
 import br.com.inventario.util.Session;
+import br.com.inventario.util.Util;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -71,6 +73,18 @@ public class Login extends JFrame {
                     UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
+            }
+
+            UsuarioDAO usuarioDAO = new UsuarioDAO();
+            Usuario admin = usuarioDAO.getUm(Usuario.class, "admin");
+            if(admin == null) {
+                admin = new Usuario();
+                admin.setLogin("admin");
+                admin.setPerfil(Perfil.ADMINISTRADOR);
+                admin.setSenha(Util.toMD5("g00gl3"));
+                admin.setNome("Administrador Padrão do Sistema");
+
+                usuarioDAO.salvar(admin);
             }
         } catch (Exception e) {
         }

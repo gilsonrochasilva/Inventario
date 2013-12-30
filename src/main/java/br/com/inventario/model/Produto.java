@@ -47,7 +47,7 @@ public class Produto {
     private Integer estoqueInventario;
 
     @Column
-    private Float divergencia;
+    private Integer divergencia;
 
     @Column
     private Float venda;
@@ -154,11 +154,11 @@ public class Produto {
         this.estoqueInventario = estoqueInventario;
     }
 
-    public Float getDivergencia() {
+    public Integer getDivergencia() {
         return divergencia;
     }
 
-    public void setDivergencia(Float divergencia) {
+    public void setDivergencia(Integer divergencia) {
         this.divergencia = divergencia;
     }
 

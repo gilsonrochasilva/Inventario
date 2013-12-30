@@ -12,14 +12,11 @@ import javax.persistence.*;
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @Column(length = 20, nullable = false, unique = true)
+    private String login;
 
     @Column(length = 50, nullable = false)
     private String nome;
-
-    @Column(length = 20, nullable = false, unique = true)
-    private String login;
 
     @Column(length = 50, nullable = false)
     private String senha;
@@ -27,14 +24,6 @@ public class Usuario {
     @Enumerated(EnumType.STRING)
     @Column(name = "perfil", nullable = false)
     private Perfil perfil;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getNome() {
         return nome;
@@ -75,13 +64,13 @@ public class Usuario {
 
         Usuario usuario = (Usuario) o;
 
-        if (!id.equals(usuario.id)) return false;
+        if (!login.equals(usuario.login)) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return id.hashCode();
+        return login.hashCode();
     }
 }

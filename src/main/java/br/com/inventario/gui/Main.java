@@ -1,9 +1,13 @@
 package br.com.inventario.gui;
 
 import br.com.inventario.dao.ProdutoDAO;
+import br.com.inventario.dao.RegistroInventarioDAO;
 import br.com.inventario.model.Produto;
 import br.com.inventario.xml.Produtos;
 import javafx.stage.FileChooser;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.view.JasperViewer;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -16,6 +20,8 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Locale;
 
 public class Main extends JFrame {
     private JPanel contentPane;
@@ -26,6 +32,7 @@ public class Main extends JFrame {
     private JButton btImportarInventario;
     private JPanel statusBar;
     private JLabel statusLabel;
+    private JButton btDemostrativoResultado;
 
     public Main() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -54,6 +61,12 @@ public class Main extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 onMovimentos(e);
+            }
+        });
+        btDemostrativoResultado.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                onDemostrativoResultado(e);
             }
         });
     }
@@ -103,5 +116,17 @@ public class Main extends JFrame {
         TodosMovimentos todosMovimentos = new TodosMovimentos(jDesktopPane);
         jDesktopPane.add("TodosMovimentos", todosMovimentos);
         jDesktopPane.setSelectedFrame(todosMovimentos);
+    }
+
+    private void onDemostrativoResultado(ActionEvent e) {
+        try {
+            RegistroInventarioDAO registroInventarioDAO = new RegistroInventarioDAO();
+            HashMap<String, Object> parameters = new HashMap<>();
+            JasperPrint jasperPrint = JasperFillManager.fillReport(getClass().getResourceAsStream("/report/demostrativo.jasper"), parameters, registroInventarioDAO.getConnection());
+            JasperViewer.viewReport(jasperPrint, false, new Locale("pt-BR"));
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            JOptionPane.showMessageDialog(this, ex.getMessage());
+        }
     }
 }

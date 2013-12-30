@@ -47,6 +47,14 @@
               <toolTipText value="Importar Inventário"/>
             </properties>
           </component>
+          <component id="72869" class="javax.swing.JButton" binding="btDemostrativoResultado">
+            <constraints/>
+            <properties>
+              <icon value="img/chart.png"/>
+              <text value=""/>
+              <toolTipText value="Demonstrativo de Resultado"/>
+            </properties>
+          </component>
         </children>
       </toolbar>
       <component id="b73fa" class="javax.swing.JDesktopPane" binding="jDesktopPane">

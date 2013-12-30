@@ -4,6 +4,12 @@
  */
 package br.com.inventario.dao.common;
 
+import org.hibernate.Session;
+import org.hibernate.engine.spi.SessionFactoryImplementor;
+import org.hibernate.service.jdbc.connections.spi.ConnectionProvider;
+
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.Date;
 import javax.persistence.EntityManager;
@@ -59,6 +65,13 @@ public abstract class GenericDAO<T> {
     
     public Query getQuery(String namedQuery) {
         return getEM().createNamedQuery(namedQuery);
+    }
+
+    public Connection getConnection() throws SQLException {
+        Session session = (Session) getEM().getDelegate();
+        SessionFactoryImplementor sfi = (SessionFactoryImplementor) session.getSessionFactory();
+        ConnectionProvider cp = sfi.getConnectionProvider();
+        return cp.getConnection();
     }
     
     /** Método que retorna uma data incial para uma consulta HQL, usando na clásula between  
