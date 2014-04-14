@@ -13,7 +13,7 @@ public class RegistroInventarioDAO extends GenericDAO<RegistroInventario> {
 
     public List<RegistroInventario> ultimosMovimentos() {
         Query query = getEM().createQuery("select r from RegistroInventario r order by r.dataHoraRegistro desc");
-        query.setMaxResults(50);
+        query.setMaxResults(100);
 
         return query.getResultList();
     }

@@ -2,9 +2,11 @@ package br.com.inventario.gui;
 
 import br.com.inventario.dao.ProdutoDAO;
 import br.com.inventario.dao.RegistroInventarioDAO;
+import br.com.inventario.model.Parametro;
 import br.com.inventario.model.Produto;
 import br.com.inventario.model.RegistroInventario;
 import br.com.inventario.model.Usuario;
+import br.com.inventario.model.emuns.Local;
 import br.com.inventario.util.Session;
 
 import javax.swing.*;
@@ -26,9 +28,9 @@ public class RegistroDeInventario extends JInternalFrame {
     private JTextField tfCodigo;
     private JTextField tfDescricao;
     private JTextField tfReferencia;
-    private JTextField tfMarca;
-    private JTextField tfTamanho;
-    private JTextField tfCor;
+    private JTextField tfCategoria;
+    private JTextField tfSubcategoria;
+    private JTextField tfFabricante;
     private JButton btConfirmar;
     private JLabel labelProduto;
 
@@ -77,20 +79,24 @@ public class RegistroDeInventario extends JInternalFrame {
             labelProduto.setText("");
 
             tfCodigo.setText(produto.getCodigoBarras());
-            tfDescricao.setText(produto.getProduto());
+            tfDescricao.setText(produto.getDescricao());
             tfReferencia.setText(produto.getReferencia());
-            tfMarca.setText(produto.getMarca());
-            tfCor.setText(produto.getCor());
-            tfTamanho.setText(produto.getTamanho());
+            tfCategoria.setText(produto.getCategoria());
+            tfSubcategoria.setText(produto.getSubcategoria());
+            tfFabricante.setText(produto.getFabricante());
 
             btConfirmar.requestFocus();
         }
     }
 
     private void onConfirmar(ActionEvent e) {
+        Parametro estacao = (Parametro) Session.get("estacao");
+
         RegistroInventario registroInventario = new RegistroInventario();
         registroInventario.setProduto(produto);
         registroInventario.setUsuario((Usuario) Session.get("usuario"));
+        registroInventario.setLocal((Local) Session.get("local"));
+        registroInventario.setEstacao(estacao.getValor());
 
         RegistroInventarioDAO registroInventarioDAO = new RegistroInventarioDAO();
         registroInventarioDAO.salvar(registroInventario);
@@ -105,8 +111,8 @@ public class RegistroDeInventario extends JInternalFrame {
         tfCodigo.setText("");
         tfDescricao.setText("");
         tfReferencia.setText("");
-        tfMarca.setText("");
-        tfCor.setText("");
-        tfTamanho.setText("");
+        tfCategoria.setText("");
+        tfFabricante.setText("");
+        tfSubcategoria.setText("");
     }
 }

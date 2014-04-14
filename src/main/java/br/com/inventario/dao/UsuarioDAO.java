@@ -1,8 +1,8 @@
 package br.com.inventario.dao;
 
-import br.com.inventario.util.Util;
 import br.com.inventario.dao.common.GenericDAO;
 import br.com.inventario.model.Usuario;
+import br.com.inventario.util.Util;
 
 import javax.persistence.Query;
 import java.io.UnsupportedEncodingException;
@@ -22,5 +22,10 @@ public class UsuarioDAO extends GenericDAO<Usuario> {
         List<Usuario> usuarios = query.getResultList();
 
         return usuarios.isEmpty() ? null : usuarios.get(0);
+    }
+
+    public List<Usuario> listar() {
+        Query query = getEM().createQuery("select u from Usuario u order by u.login");
+        return query.getResultList();
     }
 }

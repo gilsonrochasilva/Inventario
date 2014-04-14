@@ -2,7 +2,6 @@ package br.com.inventario.dao;
 
 import br.com.inventario.dao.common.GenericDAO;
 import br.com.inventario.model.Produto;
-import br.com.inventario.xml.Produtos;
 
 import javax.persistence.Query;
 import java.util.List;
@@ -12,28 +11,13 @@ import java.util.List;
  */
 public class ProdutoDAO extends GenericDAO<Produto> {
 
-    public void importarProduto(Produtos.Produto produto) {
-        Produto _produto = getPor(new Long(produto.getCodigoBarras()).toString());
-        if(_produto == null) {
-            _produto = new Produto();
-        }
+    public void importarProduto(Produto produto) {
 
-        _produto.setCodigoBarras(new Long(produto.getCodigoBarras()).toString());
-        _produto.setCompras(produto.getCompras());
-        _produto.setCor(produto.getCor());
-        _produto.setEstoqueAtual(produto.getEstoqueAtual());
-        _produto.setEstoqueInicial(produto.getEstoqueInicial());
-        _produto.setProduto(produto.getDescricao());
-        _produto.setMarca(produto.getMarca());
-        _produto.setReferencia(produto.getReferencia());
-        _produto.setTamanho(produto.getTamanho());
-        _produto.setVenda(produto.getValorVendas());
-        _produto.setVendas(produto.getVendas());
-
-        if(_produto.getId() == null) {
-            salvar(_produto);
+        Produto _prod = getUm(Produto.class, produto.getId());
+        if(_prod != null) {
+            atualizar(produto);
         } else {
-            atualizar(_produto);
+            salvar(produto);
         }
     }
 
@@ -43,6 +27,10 @@ public class ProdutoDAO extends GenericDAO<Produto> {
 
         List<Produto> produtos = query.getResultList();
 
-        return produtos.isEmpty() ? null : produtos.get(0);
+        if(produtos.isEmpty()) {
+            return getUm(Produto.class, Integer.parseInt(codigoBarras));
+        } else {
+            return produtos.get(0);
+        }
     }
 }

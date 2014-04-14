@@ -99,6 +99,22 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
           </hspacer>
+          <component id="1ae33" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Local:"/>
+            </properties>
+          </component>
+          <component id="d58cc" class="javax.swing.JComboBox" binding="cbLocal">
+            <constraints>
+              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties/>
+          </component>
         </children>
       </grid>
       <grid id="8be91" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">

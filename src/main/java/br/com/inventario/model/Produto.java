@@ -1,6 +1,7 @@
 package br.com.inventario.model;
 
 import javax.persistence.*;
+import java.util.Collections;
 
 /**
  * Created by GilsonRocha on 21/12/13.
@@ -10,53 +11,71 @@ import javax.persistence.*;
 public class Produto {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(name = "codigo_barras", length = 13, nullable = false)
+    @Column(name = "codigo_barras", length = 13)
     private String codigoBarras;
 
-    @Column(length = 500, nullable = false)
-    private String produto;
+    @Column(length = 500)
+    private String descricao;
 
-    @Column(length = 50)
+    @Column(length = 150)
     private String referencia;
 
-    @Column(length = 50)
-    private String marca;
+    @Column(name = "preco_custo")
+    private Double precoCusto;
 
-    @Column(length = 50)
-    private String cor;
+    @Column(name = "preco_venda")
+    private Double precoVenda;
 
-    @Column(length = 10)
-    private String tamanho;
+    @Column(length = 150)
+    private String categoria;
 
-    @Column(name = "estoque_inicial")
-    private Integer estoqueInicial;
+    @Column(length = 150)
+    private String subcategoria;
 
-    @Column
-    private Integer compras;
+    @Column(length = 150)
+    private String fabricante;
 
-    @Column
-    private Integer vendas;
+    @Column(name = "saldo_geral")
+    private Double saldoGeral;
 
-    @Column(name = "estoque_atual")
-    private Integer estoqueAtual;
+    @Column(name = "saldo_deposito")
+    private Double saldoDeposito;
 
-    @Column(name = "estoque_inventario")
-    private Integer estoqueInventario;
+    @Column(name = "saldo_loja")
+    private Double saldoLoja;
 
-    @Column
-    private Integer divergencia;
+    @Column(name = "saldo_it")
+    private Double saldoIT;
 
-    @Column
-    private Float venda;
+    @Column(name = "saldo_inventario")
+    private Double saldoInventario;
 
-    @Column
-    private Float quebra;
+    public static Produto toProduto(String linha) {
+        String[] fields = linha.split("\\|");
 
-    @Column(name = "quebra_percentual")
-    private Float quebraPercentual;
+        Produto produto = new Produto();
+        produto.setId(Integer.parseInt(fields[0]));
+        produto.setCodigoBarras(fields[1]);
+        produto.setDescricao(fields[2]);
+        produto.setReferencia(fields[3]);
+        produto.setPrecoCusto(Double.parseDouble(fields[4]));
+        produto.setPrecoVenda(Double.parseDouble(fields[5]));
+        produto.setCategoria(fields[6]);
+        produto.setSubcategoria(fields[7]);
+        produto.setFabricante(fields[8]);
+        produto.setSaldoGeral(Double.parseDouble(fields[9]));
+        produto.setSaldoDeposito(Double.parseDouble(fields[10]));
+        produto.setSaldoLoja(Double.parseDouble(fields[11]));
+        produto.setSaldoIT(Double.parseDouble(fields[12]));
+
+        if(produto.getId().equals(0)) {
+            produto.setId(null);
+        }
+
+        return produto;
+    }
 
     public Integer getId() {
         return id;
@@ -64,14 +83,6 @@ public class Produto {
 
     public void setId(Integer id) {
         this.id = id;
-    }
-
-    public String getProduto() {
-        return produto;
-    }
-
-    public void setProduto(String produto) {
-        this.produto = produto;
     }
 
     public String getCodigoBarras() {
@@ -82,6 +93,14 @@ public class Produto {
         this.codigoBarras = codigoBarras;
     }
 
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
     public String getReferencia() {
         return referencia;
     }
@@ -90,100 +109,84 @@ public class Produto {
         this.referencia = referencia;
     }
 
-    public String getMarca() {
-        return marca;
+    public Double getPrecoCusto() {
+        return precoCusto;
     }
 
-    public void setMarca(String marca) {
-        this.marca = marca;
+    public void setPrecoCusto(Double precoCusto) {
+        this.precoCusto = precoCusto;
     }
 
-    public String getCor() {
-        return cor;
+    public Double getPrecoVenda() {
+        return precoVenda;
     }
 
-    public void setCor(String cor) {
-        this.cor = cor;
+    public void setPrecoVenda(Double precoVenda) {
+        this.precoVenda = precoVenda;
     }
 
-    public String getTamanho() {
-        return tamanho;
+    public String getCategoria() {
+        return categoria;
     }
 
-    public void setTamanho(String tamanho) {
-        this.tamanho = tamanho;
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
     }
 
-    public Integer getEstoqueInicial() {
-        return estoqueInicial;
+    public String getSubcategoria() {
+        return subcategoria;
     }
 
-    public void setEstoqueInicial(Integer estoqueInicial) {
-        this.estoqueInicial = estoqueInicial;
+    public void setSubcategoria(String subcategoria) {
+        this.subcategoria = subcategoria;
     }
 
-    public Integer getCompras() {
-        return compras;
+    public String getFabricante() {
+        return fabricante;
     }
 
-    public void setCompras(Integer compras) {
-        this.compras = compras;
+    public void setFabricante(String fabricante) {
+        this.fabricante = fabricante;
     }
 
-    public Integer getVendas() {
-        return vendas;
+    public Double getSaldoGeral() {
+        return saldoGeral;
     }
 
-    public void setVendas(Integer vendas) {
-        this.vendas = vendas;
+    public void setSaldoGeral(Double saldoGeral) {
+        this.saldoGeral = saldoGeral;
     }
 
-    public Integer getEstoqueAtual() {
-        return estoqueAtual;
+    public Double getSaldoDeposito() {
+        return saldoDeposito;
     }
 
-    public void setEstoqueAtual(Integer estoqueAtual) {
-        this.estoqueAtual = estoqueAtual;
+    public void setSaldoDeposito(Double saldoDeposito) {
+        this.saldoDeposito = saldoDeposito;
     }
 
-    public Integer getEstoqueInventario() {
-        return estoqueInventario;
+    public Double getSaldoLoja() {
+        return saldoLoja;
     }
 
-    public void setEstoqueInventario(Integer estoqueInventario) {
-        this.estoqueInventario = estoqueInventario;
+    public void setSaldoLoja(Double saldoLoja) {
+        this.saldoLoja = saldoLoja;
     }
 
-    public Integer getDivergencia() {
-        return divergencia;
+    public Double getSaldoIT() {
+        return saldoIT;
     }
 
-    public void setDivergencia(Integer divergencia) {
-        this.divergencia = divergencia;
+    public void setSaldoIT(Double saldoIT) {
+        this.saldoIT = saldoIT;
     }
 
-    public Float getVenda() {
-        return venda;
+    public Double getSaldoInventario() {
+        return saldoInventario;
     }
 
-    public void setVenda(Float venda) {
-        this.venda = venda;
-    }
-
-    public Float getQuebra() {
-        return quebra;
-    }
-
-    public void setQuebra(Float quebra) {
-        this.quebra = quebra;
-    }
-
-    public Float getQuebraPercentual() {
-        return quebraPercentual;
-    }
-
-    public void setQuebraPercentual(Float quebraPercentual) {
-        this.quebraPercentual = quebraPercentual;
+    public void setSaldoInventario(Double saldoInventario) {
+        this.saldoInventario = saldoInventario;
     }
 
     @Override

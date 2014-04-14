@@ -38,21 +38,23 @@ public class TodosMovimentos extends JInternalFrame {
 
         columns.add("Produto");
         columns.add("Referência");
-        columns.add("Marca");
-        columns.add("Cor");
-        columns.add("Tamanho");
+        columns.add("Categoria");
+        columns.add("Subcategoria");
+        columns.add("Fabricante");
         columns.add("Data/Hora");
+        columns.add("Local");
 
         RegistroInventarioDAO registroInventarioDAO = new RegistroInventarioDAO();
         List<RegistroInventario> registroInventarios = registroInventarioDAO.ultimosMovimentos();
         for (RegistroInventario registroInventario : registroInventarios) {
             values.add(new String[] {
-                registroInventario.getProduto().getProduto(),
+                registroInventario.getProduto().getDescricao(),
                 registroInventario.getProduto().getReferencia(),
-                    registroInventario.getProduto().getMarca(),
-                    registroInventario.getProduto().getCor(),
-                    registroInventario.getProduto().getTamanho(),
-                    registroInventario.getDataFormatada()
+                    registroInventario.getProduto().getCategoria(),
+                    registroInventario.getProduto().getSubcategoria(),
+                    registroInventario.getProduto().getFabricante(),
+                    registroInventario.getDataFormatada(),
+                    registroInventario.getLocal().toString()
             });
         }
 

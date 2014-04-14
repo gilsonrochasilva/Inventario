@@ -2,7 +2,7 @@
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="br.com.inventario.gui.Main">
   <grid id="cbd77" binding="contentPane" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="48" y="54" width="690" height="359"/>
+      <xy x="48" y="54" width="1192" height="359"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -18,7 +18,7 @@
             <constraints/>
             <properties>
               <icon value="img/search-add.png"/>
-              <text value=""/>
+              <text value="Registrar Inventário"/>
               <toolTipText value="Registro de Inventário"/>
             </properties>
           </component>
@@ -26,7 +26,7 @@
             <constraints/>
             <properties>
               <icon value="img/document-checklist.png"/>
-              <text value=""/>
+              <text value="Últimos Movimentos"/>
               <toolTipText value="Últimos Movimentos"/>
             </properties>
           </component>
@@ -35,7 +35,7 @@
             <properties>
               <enabled value="true"/>
               <icon value="img/box-add.png"/>
-              <text value=""/>
+              <text value="Importar Produtos"/>
               <toolTipText value="Importar Produtos"/>
             </properties>
           </component>
@@ -43,15 +43,29 @@
             <constraints/>
             <properties>
               <icon value="img/database-add.png"/>
-              <text value=""/>
+              <text value="Importar Inventário"/>
               <toolTipText value="Importar Inventário"/>
+            </properties>
+          </component>
+          <component id="e0bc" class="javax.swing.JButton" binding="mudarLocalDeEstoqueButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <icon value="img/maps-icon.png"/>
+              <text value="Mudar Local de Estoque"/>
+            </properties>
+          </component>
+          <component id="8e023" class="javax.swing.JButton" binding="btUsuarios">
+            <constraints/>
+            <properties>
+              <icon value="img/user-icon.png"/>
+              <text value="Usuários"/>
             </properties>
           </component>
           <component id="72869" class="javax.swing.JButton" binding="btDemostrativoResultado">
             <constraints/>
             <properties>
               <icon value="img/chart.png"/>
-              <text value=""/>
+              <text value="Demostrativo de Resultado"/>
               <toolTipText value="Demonstrativo de Resultado"/>
             </properties>
           </component>

@@ -1,5 +1,7 @@
 package br.com.inventario.model;
 
+import br.com.inventario.model.emuns.Local;
+
 import javax.persistence.*;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -31,8 +33,15 @@ public class RegistroInventario {
     @Column(nullable = false)
     private Boolean importado = false;
 
+    @Column(length = 50)
+    private String estacao;
+
     @Column(nullable = false)
     private Boolean ativo = true;
+
+    @Enumerated(EnumType.ORDINAL)
+    @Column(name = "local", nullable = false)
+    private Local local;
 
     public Integer getId() {
         return id;
@@ -89,6 +98,22 @@ public class RegistroInventario {
         } else {
             return "";
         }
+    }
+
+    public String getEstacao() {
+        return estacao;
+    }
+
+    public void setEstacao(String estacao) {
+        this.estacao = estacao;
+    }
+
+    public Local getLocal() {
+        return local;
+    }
+
+    public void setLocal(Local local) {
+        this.local = local;
     }
 
     @Override

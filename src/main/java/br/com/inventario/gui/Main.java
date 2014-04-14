@@ -3,23 +3,15 @@ package br.com.inventario.gui;
 import br.com.inventario.dao.ProdutoDAO;
 import br.com.inventario.dao.RegistroInventarioDAO;
 import br.com.inventario.model.Produto;
-import br.com.inventario.xml.Produtos;
-import javafx.stage.FileChooser;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.view.JasperViewer;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.transform.stream.StreamSource;
-import java.awt.*;
-import java.awt.event.*;
-import java.io.File;
-import java.io.IOException;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.*;
 import java.util.HashMap;
 import java.util.Locale;
 
@@ -33,6 +25,8 @@ public class Main extends JFrame {
     private JPanel statusBar;
     private JLabel statusLabel;
     private JButton btDemostrativoResultado;
+    private JButton mudarLocalDeEstoqueButton;
+    private JButton btUsuarios;
 
     public Main() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -49,12 +43,7 @@ public class Main extends JFrame {
         btImportarProdutos.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            try {
                 onImportarProdutos(e);
-            } catch (JAXBException e1) {
-                e1.printStackTrace();
-                JOptionPane.showMessageDialog(null, e1.getMessage());
-            }
             }
         });
         btTodosMovimentos.addActionListener(new ActionListener() {
@@ -69,6 +58,12 @@ public class Main extends JFrame {
                 onDemostrativoResultado(e);
             }
         });
+        btUsuarios.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                onUsuarios(actionEvent);
+            }
+        });
     }
 
     private void onRegistroInventario(ActionEvent e) {
@@ -77,8 +72,14 @@ public class Main extends JFrame {
         jDesktopPane.setSelectedFrame(registroDeInventario);
     }
 
-    private void onImportarProdutos(ActionEvent e) throws JAXBException {
-        FileNameExtensionFilter filter = new FileNameExtensionFilter("Arquivos XML", "xml");
+    private void onUsuarios(ActionEvent e) {
+        FormUsuario formUsuario = new FormUsuario(jDesktopPane);
+        jDesktopPane.add("FormUsuario", formUsuario);
+        jDesktopPane.setSelectedFrame(formUsuario);
+    }
+
+    private void onImportarProdutos(ActionEvent e) {
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("Arquivos TXT", "txt");
 
         JFileChooser chooser = new JFileChooser();
         chooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -87,26 +88,33 @@ public class Main extends JFrame {
 
         int returnVal = chooser.showOpenDialog(this);
         if(returnVal == JFileChooser.APPROVE_OPTION) {
-            File fileArquivoXML = chooser.getSelectedFile();
-            if(!fileArquivoXML.exists()) {
-                System.err.println(String.format("Arquivo %s não encontrado", fileArquivoXML.getPath()));
+            File fileArquivoTXT = chooser.getSelectedFile();
+            if(!fileArquivoTXT.exists()) {
+                System.err.println(String.format("Arquivo %s não encontrado", fileArquivoTXT.getPath()));
             }
 
-            JAXBContext jaxbContext = JAXBContext.newInstance(Produtos.class);
+            try (BufferedReader in = new BufferedReader(new FileReader(fileArquivoTXT))) {
 
-            StreamSource streamSource = new StreamSource(fileArquivoXML);
-            Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
-            Produtos produtos = (Produtos) unmarshaller.unmarshal(streamSource, Produtos.class).getValue();
+                while (in.ready()) {
+                    String s = in.readLine();
+                    int contador = 0;
 
-            ProdutoDAO produtoDAO = new ProdutoDAO();
+                    Produto produto = Produto.toProduto(s);
+                    ProdutoDAO produtoDAO = new ProdutoDAO();
+                    statusLabel.setText(String.format("Produtos importados %d .", ++contador));
+                    produtoDAO.importarProduto(produto);
 
-            int contador = 0;
-            for(Produtos.Produto produto : produtos.getProduto()) {
-                statusLabel.setText(String.format("Importando %d de %d.", ++contador, produtos.getProduto().size()));
-                produtoDAO.importarProduto(produto);
+                    statusLabel.setText("Finalizado com sucesso.");
+                }
+
+                in.close();
+            } catch (FileNotFoundException e1) {
+                statusLabel.setText("Erro");
+                JOptionPane.showMessageDialog(null, e1.getMessage());
+            } catch (IOException e1) {
+                statusLabel.setText("Erro");
+                JOptionPane.showMessageDialog(null, e1.getMessage());
             }
-
-            statusLabel.setText(String.format("Finalizado com sucesso.", ++contador, produtos.getProduto().size()));
         } else {
             chooser.setVisible(false);
         }

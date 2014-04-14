@@ -8,9 +8,6 @@
 
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
 
-        <class>br.com.inventario.model.Usuario</class>
-        <class>br.com.inventario.model.Produto</class>
-        <class>br.com.inventario.model.RegistroInventario</class>
 
 		<properties>
             <property name="javax.persistence.jdbc.user" value="inventario"/>

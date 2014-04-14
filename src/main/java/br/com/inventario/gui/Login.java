@@ -1,7 +1,10 @@
 package br.com.inventario.gui;
 
+import br.com.inventario.dao.ParametroDAO;
 import br.com.inventario.dao.UsuarioDAO;
+import br.com.inventario.model.Parametro;
 import br.com.inventario.model.Usuario;
+import br.com.inventario.model.emuns.Local;
 import br.com.inventario.model.emuns.Perfil;
 import br.com.inventario.util.Session;
 import br.com.inventario.util.Util;
@@ -19,6 +22,7 @@ public class Login extends JFrame {
     private JTextField tfLogin;
 
     private JPasswordField tfSenha;
+    private JComboBox cbLocal;
 
     public Login() {
         setContentPane(contentPane);
@@ -27,6 +31,10 @@ public class Login extends JFrame {
         setResizable(false);
         pack();
         setLocationRelativeTo(null);
+
+        cbLocal.addItem(Local.DEPOSITO);
+        cbLocal.addItem(Local.LOJA);
+        cbLocal.addItem(Local.IT);
 
         getRootPane().setDefaultButton(btLogin);
 
@@ -129,7 +137,29 @@ public class Login extends JFrame {
                 if(usuario == null) {
                     JOptionPane.showMessageDialog(login, "Login ou senha inválidos.");
                 } else {
+                    ParametroDAO parametroDAO = new ParametroDAO();
+                    Parametro parametro = parametroDAO.getUm(Parametro.class, "estacao");
+
+                    if(parametro == null) {
+                        String estacao = JOptionPane.showInputDialog(null, "Informe o identificador da estação:");
+
+                        if(estacao == null) {
+                            return;
+                        }
+
+                        parametro = new Parametro();
+                        parametro.setId("estacao");
+                        parametro.setValor(estacao);
+
+                        parametroDAO.salvar(parametro);
+
+                        Session.put("estacao", parametro);
+                    } else {
+                        Session.put("estacao", parametro);
+                    }
+
                     Session.put("usuario", usuario);
+                    Session.put("local", (Local) login.cbLocal.getSelectedItem());
 
                     Main dialog = new Main();
                     dialog.setVisible(true);
