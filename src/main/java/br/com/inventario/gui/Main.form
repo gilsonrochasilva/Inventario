@@ -8,16 +8,21 @@
     <border type="none"/>
     <children>
       <toolbar id="7438f">
-        <constraints border-constraint="North"/>
+        <constraints border-constraint="West"/>
         <properties>
           <floatable value="false"/>
+          <orientation value="1"/>
         </properties>
         <border type="none"/>
         <children>
           <component id="134b1" class="javax.swing.JButton" binding="btRegistroInventario">
             <constraints/>
             <properties>
+              <horizontalAlignment value="2"/>
               <icon value="img/search-add.png"/>
+              <maximumSize width="218" height="44"/>
+              <minimumSize width="218" height="44"/>
+              <preferredSize width="218" height="44"/>
               <text value="Registrar Inventário"/>
               <toolTipText value="Registro de Inventário"/>
             </properties>
@@ -25,7 +30,11 @@
           <component id="d4b50" class="javax.swing.JButton" binding="btTodosMovimentos">
             <constraints/>
             <properties>
+              <horizontalAlignment value="2"/>
               <icon value="img/document-checklist.png"/>
+              <maximumSize width="218" height="44"/>
+              <minimumSize width="218" height="44"/>
+              <preferredSize width="218" height="44"/>
               <text value="Últimos Movimentos"/>
               <toolTipText value="Últimos Movimentos"/>
             </properties>
@@ -34,7 +43,11 @@
             <constraints/>
             <properties>
               <enabled value="true"/>
+              <horizontalAlignment value="2"/>
               <icon value="img/box-add.png"/>
+              <maximumSize width="218" height="44"/>
+              <minimumSize width="218" height="44"/>
+              <preferredSize width="218" height="44"/>
               <text value="Importar Produtos"/>
               <toolTipText value="Importar Produtos"/>
             </properties>
@@ -42,28 +55,41 @@
           <component id="8d565" class="javax.swing.JButton" binding="btImportarInventario">
             <constraints/>
             <properties>
+              <horizontalAlignment value="2"/>
               <icon value="img/database-add.png"/>
+              <maximumSize width="218" height="44"/>
+              <minimumSize width="218" height="44"/>
+              <preferredSize width="218" height="44"/>
               <text value="Importar Inventário"/>
               <toolTipText value="Importar Inventário"/>
             </properties>
           </component>
-          <component id="e0bc" class="javax.swing.JButton" binding="mudarLocalDeEstoqueButton" default-binding="true">
+          <component id="e0bc" class="javax.swing.JButton" binding="btLocalEstoque">
             <constraints/>
             <properties>
+              <horizontalAlignment value="2"/>
               <icon value="img/maps-icon.png"/>
+              <maximumSize width="218" height="44"/>
+              <minimumSize width="218" height="44"/>
+              <preferredSize width="218" height="44"/>
               <text value="Mudar Local de Estoque"/>
             </properties>
           </component>
           <component id="8e023" class="javax.swing.JButton" binding="btUsuarios">
             <constraints/>
             <properties>
+              <horizontalAlignment value="2"/>
               <icon value="img/user-icon.png"/>
+              <maximumSize width="218" height="44"/>
+              <minimumSize width="218" height="44"/>
+              <preferredSize width="218" height="44"/>
               <text value="Usuários"/>
             </properties>
           </component>
           <component id="72869" class="javax.swing.JButton" binding="btDemostrativoResultado">
             <constraints/>
             <properties>
+              <horizontalAlignment value="2"/>
               <icon value="img/chart.png"/>
               <text value="Demostrativo de Resultado"/>
               <toolTipText value="Demonstrativo de Resultado"/>

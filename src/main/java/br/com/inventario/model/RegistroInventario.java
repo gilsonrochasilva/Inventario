@@ -19,12 +19,16 @@ public class RegistroInventario {
     private Integer id;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="usuario_id")
+    @JoinColumn(name="usuario_id", nullable = false)
     private Usuario usuario;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="produto_id")
+    @JoinColumn(name="produto_id", nullable = false)
     private Produto produto;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name="inventario_id", nullable = false)
+    private Inventario inventario;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "data_hora_registro")
@@ -114,6 +118,14 @@ public class RegistroInventario {
 
     public void setLocal(Local local) {
         this.local = local;
+    }
+
+    public Inventario getInventario() {
+        return inventario;
+    }
+
+    public void setInventario(Inventario inventario) {
+        this.inventario = inventario;
     }
 
     @Override

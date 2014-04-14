@@ -9,6 +9,7 @@ import net.sf.jasperreports.view.JasperViewer;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
@@ -25,13 +26,14 @@ public class Main extends JFrame {
     private JPanel statusBar;
     private JLabel statusLabel;
     private JButton btDemostrativoResultado;
-    private JButton mudarLocalDeEstoqueButton;
+    private JButton btLocalEstoque;
     private JButton btUsuarios;
 
     public Main() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setExtendedState(MAXIMIZED_BOTH);
-        setTitle("Ypsilon Consulting - Sistema de Inventário");
+        setMinimumSize(new Dimension(800, 600));
+        setTitle("Y2G - Sistema de Inventário");
         setContentPane(contentPane);
 
         btRegistroInventario.addActionListener(new ActionListener() {

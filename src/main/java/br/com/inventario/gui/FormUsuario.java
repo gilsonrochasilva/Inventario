@@ -54,13 +54,13 @@ public class FormUsuario extends JInternalFrame {
         btSalvar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                try {
-                    onSalvar(actionEvent);
-                } catch (UnsupportedEncodingException e) {
-                    e.printStackTrace();
-                } catch (NoSuchAlgorithmException e) {
-                    e.printStackTrace();
-                }
+            try {
+                onSalvar(actionEvent);
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
+            }
             }
         });
     }
