@@ -11,8 +11,9 @@ import java.util.List;
  */
 public class RegistroInventarioDAO extends GenericDAO<RegistroInventario> {
 
-    public List<RegistroInventario> ultimosMovimentos() {
-        Query query = getEM().createQuery("select r from RegistroInventario r order by r.dataHoraRegistro desc");
+    public List<RegistroInventario> ultimosMovimentos(String estacao) {
+        Query query = getEM().createQuery("select r from RegistroInventario r where id.estacao = :estacao order by r.dataHoraRegistro desc");
+        query.setParameter("estacao", estacao);
         query.setMaxResults(100);
 
         return query.getResultList();

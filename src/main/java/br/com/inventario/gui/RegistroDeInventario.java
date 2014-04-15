@@ -1,11 +1,9 @@
 package br.com.inventario.gui;
 
+import br.com.inventario.dao.InventarioDAO;
 import br.com.inventario.dao.ProdutoDAO;
 import br.com.inventario.dao.RegistroInventarioDAO;
-import br.com.inventario.model.Parametro;
-import br.com.inventario.model.Produto;
-import br.com.inventario.model.RegistroInventario;
-import br.com.inventario.model.Usuario;
+import br.com.inventario.model.*;
 import br.com.inventario.model.emuns.Local;
 import br.com.inventario.util.Session;
 
@@ -14,6 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
+import java.util.Date;
 
 /**
  * Created by GilsonRocha on 26/12/13.
@@ -90,6 +89,9 @@ public class RegistroDeInventario extends JInternalFrame {
     }
 
     private void onConfirmar(ActionEvent e) {
+        InventarioDAO inventarioDAO = new InventarioDAO();
+        Inventario inventario = inventarioDAO.getAtivo();
+
         Parametro estacao = (Parametro) Session.get("estacao");
 
         RegistroInventario registroInventario = new RegistroInventario();
@@ -97,6 +99,8 @@ public class RegistroDeInventario extends JInternalFrame {
         registroInventario.setUsuario((Usuario) Session.get("usuario"));
         registroInventario.setLocal((Local) Session.get("local"));
         registroInventario.setEstacao(estacao.getValor());
+        registroInventario.setInventario(inventario);
+        registroInventario.setId(String.format("%s-%s", estacao.getValor(), new Date().getTime()));
 
         RegistroInventarioDAO registroInventarioDAO = new RegistroInventarioDAO();
         registroInventarioDAO.salvar(registroInventario);

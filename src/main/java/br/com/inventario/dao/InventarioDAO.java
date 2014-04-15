@@ -23,4 +23,9 @@ public class InventarioDAO extends GenericDAO<Inventario> {
             atualizar(inventario);
         }
     }
+
+    public Inventario getAtivo() {
+        Query query = getEM().createQuery("select i from Inventario i where i.finalizado = false");
+        return (Inventario) query.getSingleResult();
+    }
 }

@@ -10,13 +10,12 @@ import java.util.Date;
 /**
  * Created by GilsonRocha on 21/12/13.
  */
-@Table
 @Entity
+@Table(name = "REGISTRO_INVENTARIO")
 public class RegistroInventario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private String id;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="usuario_id", nullable = false)
@@ -47,11 +46,11 @@ public class RegistroInventario {
     @Column(name = "local", nullable = false)
     private Local local;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 

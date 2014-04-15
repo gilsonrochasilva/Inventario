@@ -1,7 +1,9 @@
 package br.com.inventario.gui;
 
 import br.com.inventario.dao.RegistroInventarioDAO;
+import br.com.inventario.model.Parametro;
 import br.com.inventario.model.RegistroInventario;
+import br.com.inventario.util.Session;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -25,7 +27,7 @@ public class TodosMovimentos extends JInternalFrame {
 
         setTitle("Últimos Movimentos");
         setClosable(true);
-        setBounds(0, 0, jDesktopPane.getWidth(), jDesktopPane.getHeight());
+        setBounds(0, 0, 800, 600);
         setVisible(true);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
@@ -44,8 +46,10 @@ public class TodosMovimentos extends JInternalFrame {
         columns.add("Data/Hora");
         columns.add("Local");
 
+        Parametro estacao = (Parametro) Session.get("estacao");
+
         RegistroInventarioDAO registroInventarioDAO = new RegistroInventarioDAO();
-        List<RegistroInventario> registroInventarios = registroInventarioDAO.ultimosMovimentos();
+        List<RegistroInventario> registroInventarios = registroInventarioDAO.ultimosMovimentos(estacao.getValor());
         for (RegistroInventario registroInventario : registroInventarios) {
             values.add(new String[] {
                 registroInventario.getProduto().getDescricao(),

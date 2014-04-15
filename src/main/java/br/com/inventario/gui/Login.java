@@ -23,6 +23,7 @@ public class Login extends JFrame {
 
     private JPasswordField tfSenha;
     private JComboBox cbLocal;
+    private Main main;
 
     public Login() {
         setContentPane(contentPane);
@@ -37,6 +38,8 @@ public class Login extends JFrame {
         cbLocal.addItem(Local.IT);
 
         getRootPane().setDefaultButton(btLogin);
+
+        main = new Main(this);
 
         btSair.addActionListener(new SairActionListener());
         btLogin.addActionListener(new EntrarActionListener(this));
@@ -161,9 +164,7 @@ public class Login extends JFrame {
                     Session.put("usuario", usuario);
                     Session.put("local", (Local) login.cbLocal.getSelectedItem());
 
-                    Main dialog = new Main();
-                    dialog.setVisible(true);
-
+                    login.main.setVisible(true);
                     login.setVisible(false);
                 }
             } catch (UnsupportedEncodingException e1) {

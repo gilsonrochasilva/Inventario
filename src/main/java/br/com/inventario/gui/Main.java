@@ -12,6 +12,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.beans.PropertyVetoException;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Locale;
@@ -30,7 +31,11 @@ public class Main extends JFrame {
     private JButton btUsuarios;
     private JButton btInventarios;
 
-    public Main() {
+    private Login login;
+
+    public Main(Login login) {
+        this.login = login;
+
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setExtendedState(MAXIMIZED_BOTH);
         setMinimumSize(new Dimension(800, 600));
@@ -73,24 +78,32 @@ public class Main extends JFrame {
                 onInventarios(actionEvent);
             }
         });
+        btLocalEstoque.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                onMudarLocalEstoque();
+            }
+        });
+    }
+
+    private void onMudarLocalEstoque() {
+        this.setVisible(false);
+        this.login.setVisible(true);
     }
 
     private void onInventarios(ActionEvent e) {
         FormInventario formInventario = new FormInventario(jDesktopPane);
-        jDesktopPane.add("FormInventario", formInventario);
-        jDesktopPane.setSelectedFrame(formInventario);
+        addInternalFrame("FormInventario", formInventario);
     }
 
     private void onRegistroInventario(ActionEvent e) {
         RegistroDeInventario registroDeInventario = new RegistroDeInventario(jDesktopPane);
-        jDesktopPane.add("RegistroDeInventario", registroDeInventario);
-        jDesktopPane.setSelectedFrame(registroDeInventario);
+        addInternalFrame("RegistroDeInventario", registroDeInventario);
     }
 
     private void onUsuarios(ActionEvent e) {
         FormUsuario formUsuario = new FormUsuario(jDesktopPane);
-        jDesktopPane.add("FormUsuario", formUsuario);
-        jDesktopPane.setSelectedFrame(formUsuario);
+        addInternalFrame("FormUsuario", formUsuario);
     }
 
     private void onImportarProdutos(ActionEvent e) {
@@ -137,8 +150,20 @@ public class Main extends JFrame {
 
     private void onMovimentos(ActionEvent e) {
         TodosMovimentos todosMovimentos = new TodosMovimentos(jDesktopPane);
-        jDesktopPane.add("TodosMovimentos", todosMovimentos);
-        jDesktopPane.setSelectedFrame(todosMovimentos);
+        addInternalFrame("TodosMovimentos", todosMovimentos);
+    }
+
+    private void addInternalFrame(String name, JInternalFrame jInternalFrame) {
+        int position = jDesktopPane.getAllFrames().length * 20;
+        jDesktopPane.add(name, jInternalFrame);
+
+        jInternalFrame.setLocation(position, position);
+        jInternalFrame.setVisible(true);
+        try {
+            jInternalFrame.setSelected(true);
+        } catch (PropertyVetoException e) {
+            e.printStackTrace();
+        }
     }
 
     private void onDemostrativoResultado(ActionEvent e) {
