@@ -28,6 +28,7 @@ public class Main extends JFrame {
     private JButton btDemostrativoResultado;
     private JButton btLocalEstoque;
     private JButton btUsuarios;
+    private JButton btInventarios;
 
     public Main() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -66,6 +67,18 @@ public class Main extends JFrame {
                 onUsuarios(actionEvent);
             }
         });
+        btInventarios.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                onInventarios(actionEvent);
+            }
+        });
+    }
+
+    private void onInventarios(ActionEvent e) {
+        FormInventario formInventario = new FormInventario(jDesktopPane);
+        jDesktopPane.add("FormInventario", formInventario);
+        jDesktopPane.setSelectedFrame(formInventario);
     }
 
     private void onRegistroInventario(ActionEvent e) {

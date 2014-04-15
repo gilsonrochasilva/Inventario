@@ -15,4 +15,12 @@ public class InventarioDAO extends GenericDAO<Inventario> {
         Query query = getEM().createQuery("select i from Inventario i order by i.id");
         return query.getResultList();
     }
+
+    public void finalizarTodos() {
+        List<Inventario> listar = listar();
+        for (Inventario inventario : listar) {
+            inventario.setFinalizado(true);
+            atualizar(inventario);
+        }
+    }
 }

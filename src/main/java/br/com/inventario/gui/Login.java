@@ -26,7 +26,7 @@ public class Login extends JFrame {
 
     public Login() {
         setContentPane(contentPane);
-        setTitle("Ypsilon Consulting - Sistema de Inventário");
+        setTitle("Y2G - Sistema de Inventário");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         pack();

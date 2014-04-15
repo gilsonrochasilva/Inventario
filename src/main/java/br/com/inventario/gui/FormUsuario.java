@@ -69,14 +69,17 @@ public class FormUsuario extends JInternalFrame {
 
         if(tfLogin.getText() == null || tfLogin.getText().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Todos os campos são obrigatórios.");
+            return;
         }
 
         if(tfNome.getText() == null || tfNome.getText().isEmpty()) {
             JOptionPane.showMessageDialog(this, "Todos os campos são obrigatórios.");
+            return;
         }
 
         if(tfSenha.getPassword() == null) {
             JOptionPane.showMessageDialog(this, "Todos os campos são obrigatórios.");
+            return;
         }
 
         UsuarioDAO usuarioDAO = new UsuarioDAO();
